@@ -19,6 +19,7 @@
       <a href="services.html">Services</a>
       <a href="apropos.html">À propos</a>
       <a href="contact.html" class="active">Contact</a>
+      <a href="emplois.html">Emplois</a>
     </nav>
     <div class="nav-cta">
       <a href="contact.html" class="btn btn-primary">Demander un devis</a>
@@ -67,7 +68,10 @@
         <p class="eyebrow">Formulaire de contact</p>
         <h3 style="font-size:26px; color:var(--navy-deep); text-transform:uppercase; margin-top:14px; margin-bottom:26px;">Décrivez votre projet</h3>
 
-        <form id="contactForm">
+        <form id="contactForm" action="https://formsubmit.co/ajax/ekoulepaulpatrice@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nouveau message depuis le site P&S PRO-ELECT SARL">
+          <input type="hidden" name="_template" value="table">
           <div class="form-row">
             <div class="field">
               <label for="nom">Nom complet</label>
