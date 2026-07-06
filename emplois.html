@@ -97,7 +97,7 @@
           <li>3 ans d’expérience</li>
           <li>Permis B souhaité</li>
         </ul>
-        <a href="#proposer" class="text-link">Postuler</a>
+        <a href="#candidature" class="text-link" data-job-title="Technicien réseau MT/BT">Postuler</a>
       </article>
 
       <article class="job-card" data-category="chantier" data-region="Yaoundé">
@@ -112,7 +112,7 @@
           <li>5 ans minimum</li>
           <li>Leadership</li>
         </ul>
-        <a href="#proposer" class="text-link">Postuler</a>
+        <a href="#candidature" class="text-link" data-job-title="Coordinateur de chantier">Postuler</a>
       </article>
 
       <article class="job-card" data-category="bureau" data-region="Bafoussam">
@@ -127,13 +127,90 @@
           <li>Diplôme ingénieur</li>
           <li>Autonomie</li>
         </ul>
-        <a href="#proposer" class="text-link">Postuler</a>
+        <a href="#candidature" class="text-link" data-job-title="Ingénieur études électriques">Postuler</a>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section" id="proposer">
+<section class="section" id="candidature">
+  <div class="container">
+    <div class="two-col careers-form-layout">
+      <div>
+        <p class="eyebrow">Postuler</p>
+        <h2>Vous cherchez un emploi ?</h2>
+        <p>Déposez votre candidature en quelques secondes. Nous la consulterons avec attention et vous répondrons selon les besoins du moment.</p>
+        <div class="values-grid" style="margin-top:28px;">
+          <div class="value-card">
+            <h4>Profil</h4>
+            <p>Renseignez votre expérience, votre ville et votre poste recherché.</p>
+          </div>
+          <div class="value-card">
+            <h4>Suivi</h4>
+            <p>Votre candidature apparaît immédiatement dans l’aperçu dynamique du site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form id="candidateForm" class="offer-form">
+          <div class="field">
+            <label for="candidateName">Nom complet</label>
+            <input type="text" id="candidateName" name="candidateName" placeholder="Votre nom complet" required>
+          </div>
+          <div class="field">
+            <label for="candidateEmail">Email</label>
+            <input type="email" id="candidateEmail" name="candidateEmail" placeholder="vous@exemple.com" required>
+          </div>
+          <div class="field">
+            <label for="candidatePhone">Téléphone</label>
+            <input type="tel" id="candidatePhone" name="candidatePhone" placeholder="+237 6XX XX XX XX" required>
+          </div>
+          <div class="field">
+            <label for="candidatePoste">Poste recherché</label>
+            <input type="text" id="candidatePoste" name="candidatePoste" placeholder="Ex. Technicien réseau MT/BT" required>
+          </div>
+          <div class="field">
+            <label for="candidateLocation">Ville / Région</label>
+            <input type="text" id="candidateLocation" name="candidateLocation" placeholder="Douala, Yaoundé, Bafoussam..." required>
+          </div>
+          <div class="field">
+            <label for="candidateExperience">Expérience</label>
+            <input type="text" id="candidateExperience" name="candidateExperience" placeholder="3 ans, 5 ans, débutant..." required>
+          </div>
+          <div class="field">
+            <label for="candidateMessage">Motivation</label>
+            <textarea id="candidateMessageText" name="candidateMessage" placeholder="Présentez votre profil et votre motivation pour ce poste." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Envoyer ma candidature</button>
+          <p class="form-note" id="candidateMessage" style="display:block;">Cette partie reste en front-end, sans base de données.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="preview-panel">
+      <div class="preview-header">
+        <h3>Candidatures reçues</h3>
+        <p>Un aperçu instantané de la candidature soumise depuis cette page.</p>
+      </div>
+      <div class="preview-list" id="candidatePreviewList">
+        <article class="preview-card">
+          <div class="preview-heading">
+            <strong>Exemple de candidature</strong>
+            <span>À étudier</span>
+          </div>
+          <p>Votre candidature sera affichée ici après soumission, en mode démonstration front-end.</p>
+          <div class="job-meta">
+            <span>Douala</span>
+            <span>Profil prêt</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="proposer">
   <div class="container">
     <div class="two-col careers-form-layout">
       <div>

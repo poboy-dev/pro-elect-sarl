@@ -34,6 +34,54 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Défilement fluide vers le formulaire de candidature
+  document.querySelectorAll('.text-link[href="#candidature"]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      var target = document.getElementById('candidature');
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var firstField = document.getElementById('candidatePoste');
+      if (firstField) {
+        setTimeout(function () { firstField.focus(); }, 350);
+      }
+    });
+  });
+
+  // Ajout dynamique d'une candidature depuis le formulaire candidat
+  var candidateForm = document.getElementById('candidateForm');
+  var candidatePreviewList = document.getElementById('candidatePreviewList');
+  if (candidateForm && candidatePreviewList) {
+    candidateForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var name = document.getElementById('candidateName').value.trim();
+      var poste = document.getElementById('candidatePoste').value.trim();
+      var location = document.getElementById('candidateLocation').value.trim();
+      var experience = document.getElementById('candidateExperience').value.trim();
+      var message = document.getElementById('candidateMessage');
+
+      if (!name || !poste || !location || !experience) {
+        if (message) {
+          message.textContent = 'Veuillez remplir les champs essentiels pour envoyer votre candidature.';
+          message.style.color = '#e74c3c';
+        }
+        return;
+      }
+
+      var card = document.createElement('article');
+      card.className = 'preview-card';
+      card.innerHTML = '<div class="preview-heading"><strong>' + name + '</strong><span>À étudier</span></div><p>Poste : ' + poste + ' — ' + experience + ' d’expérience. Candidature envoyée depuis le site.</p><div class="job-meta"><span>' + location + '</span><span>Nouvelle candidature</span></div>';
+      candidatePreviewList.prepend(card);
+
+      candidateForm.reset();
+      if (message) {
+        message.textContent = 'Candidature envoyée avec succès. Nous vous contacterons prochainement.';
+        message.style.color = '#27ae60';
+      }
+    });
+  }
+
   // Ajout dynamique d'une offre depuis le formulaire front-end
   var offerForm = document.getElementById('offerForm');
   var previewList = document.getElementById('previewList');
