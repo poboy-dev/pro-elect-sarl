@@ -562,6 +562,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* ---------- Careers / jobs page ---------- */
 .careers-hero{ min-height: 560px; }
+#proposer,
+#offres{ scroll-margin-top: 110px; }
 .career-highlights{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
