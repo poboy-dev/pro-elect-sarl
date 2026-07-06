@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P&amp;S PRO-ELECT SARL — Réseaux MT/BT, Études &amp; Maintenance Électrique au Cameroun</title>
+<meta name="description" content="P&S PRO-ELECT SARL : conception, réalisation et maintenance de réseaux électriques MT/BT, études de génie civil et conseil, à Douala et dans tout le Cameroun.">
+<link rel="icon" href="assets/logo.jpeg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo.jpeg" alt="P&S PRO-ELECT SARL"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Électricité MT/BT · Génie civil · Cameroun</p>
+        <h1>Le courant passe.<br>Chez vous, en <span>toute sécurité.</span></h1>
+        <p class="lead">P&amp;S PRO-ELECT SARL conçoit, réalise et entretient les réseaux électriques moyenne et basse tension pour les industriels, les collectivités et les particuliers, de Douala à l'ensemble du territoire camerounais.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+          <a href="services.html" class="btn btn-ghost">Voir nos services</a>
+        </div>
+        <div class="stat-bar">
+          <div class="stat"><b>12+</b><span>Années d'expérience</span></div>
+          <div class="stat"><b>180+</b><span>Chantiers livrés</span></div>
+          <div class="stat"><b>06</b><span>Régions couvertes</span></div>
+        </div>
+      </div>
+
+      <div class="schematic-wrap">
+        <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma d'un réseau électrique MT/BT reliant un poste source à des transformateurs et des points de consommation">
+          <defs>
+            <style>
+              .node-fill{ fill:#0B1533; stroke:#F2A81D; stroke-width:2; }
+              .node-fill-blue{ fill:#16225C; stroke:rgba(255,255,255,0.4); stroke-width:1.5; }
+              .lbl{ font-family:'IBM Plex Mono', monospace; font-size:11px; fill:rgba(255,255,255,0.6); letter-spacing:0.5px; }
+              .lbl-strong{ font-family:'IBM Plex Mono', monospace; font-size:11px; fill:#F2A81D; letter-spacing:0.5px; font-weight:600; }
+              .wire{ stroke:rgba(255,255,255,0.22); stroke-width:2; fill:none; }
+              .flow{ stroke:#F2A81D; stroke-width:2; fill:none; stroke-dasharray:6 10; animation: dash 2.4s linear infinite; }
+              @keyframes dash{ to{ stroke-dashoffset:-160; } }
+            </style>
+          </defs>
+
+          <!-- Poste source -->
+          <rect x="30" y="30" width="86" height="56" rx="4" class="node-fill"/>
+          <text x="73" y="63" text-anchor="middle" class="lbl-strong">30 kV</text>
+          <text x="73" y="105" text-anchor="middle" class="lbl">POSTE SOURCE</text>
+
+          <!-- ligne MT -->
+          <path class="wire" d="M116 58 H 300"/>
+          <path class="flow" d="M116 58 H 300"/>
+
+          <!-- Transformateur MT/BT -->
+          <circle cx="330" cy="58" r="30" class="node-fill"/>
+          <text x="330" y="63" text-anchor="middle" class="lbl-strong">MT/BT</text>
+          <text x="330" y="106" text-anchor="middle" class="lbl">TRANSFORMATEUR</text>
+
+          <!-- descente vers poteau -->
+          <path class="wire" d="M330 88 V 190"/>
+          <path class="flow" d="M330 88 V 190"/>
+
+          <!-- Poteau BT central -->
+          <line x1="330" y1="190" x2="330" y2="330" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+          <line x1="290" y1="210" x2="370" y2="210" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+          <text x="330" y="352" text-anchor="middle" class="lbl">POTEAU BT</text>
+
+          <!-- distribution vers 3 points -->
+          <path class="wire" d="M330 210 C 200 210, 120 250, 70 300"/>
+          <path class="flow" d="M330 210 C 200 210, 120 250, 70 300"/>
+          <path class="wire" d="M330 240 V 300"/>
+          <path class="flow" d="M330 240 V 300"/>
+          <path class="wire" d="M330 210 C 420 220, 460 260, 470 300"/>
+          <path class="flow" d="M330 210 C 420 220, 460 260, 470 300"/>
+
+          <!-- points de consommation -->
+          <rect x="34" y="300" width="72" height="50" rx="3" class="node-fill-blue"/>
+          <text x="70" y="368" text-anchor="middle" class="lbl">RÉSIDENTIEL</text>
+
+          <rect x="294" y="300" width="72" height="50" rx="3" class="node-fill-blue"/>
+          <text x="330" y="368" text-anchor="middle" class="lbl">INDUSTRIEL</text>
+
+          <rect x="434" y="300" width="72" height="50" rx="3" class="node-fill-blue"/>
+          <text x="470" y="368" text-anchor="middle" class="lbl">TERTIAIRE</text>
+
+          <text x="330" y="420" text-anchor="middle" class="lbl" style="fill:rgba(255,255,255,0.35)">SCHÉMA UNIFILAIRE — RÉSEAU MT/BT TYPE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Nos domaines d'intervention</p>
+      <h2>Du poste source jusqu'au compteur</h2>
+      <p>Une équipe d'ingénieurs et de techniciens qui maîtrise l'ensemble de la chaîne : étude, exécution, mise en service et suivi dans le temps.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <h3>Conception réseaux MT/BT</h3>
+        <p>Études techniques, dimensionnement et plans d'exécution pour vos réseaux moyenne et basse tension.</p>
+        <span class="tag">Bureau d'études</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <h3>Réalisation</h3>
+        <p>Pose de lignes, raccordements, postes de transformation : exécution des travaux dans le respect des normes en vigueur.</p>
+        <span class="tag">Travaux terrain</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <h3>Maintenance</h3>
+        <p>Contrats d'entretien préventif et curatif pour garantir la continuité de service de vos installations électriques.</p>
+        <span class="tag">Contrat annuel</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <h3>Conseil</h3>
+        <p>Diagnostic, audit énergétique et accompagnement dans le choix des solutions techniques les plus adaptées.</p>
+        <span class="tag">Expertise</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <h3>Études génie civil</h3>
+        <p>Fondations de poteaux, tranchées, génie civil des postes : la partie civile de vos projets électriques.</p>
+        <span class="tag">Génie civil</span>
+      </div>
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <h3>Prestation de service</h3>
+        <p>Mise à disposition de personnel qualifié et de matériel pour vos chantiers, ponctuels ou de longue durée.</p>
+        <span class="tag">Sur mesure</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">Pourquoi P&amp;S PRO-ELECT</p>
+        <h2 style="text-transform:uppercase; font-size:clamp(28px,3.6vw,40px); color:var(--navy-deep); margin-top:14px;">Une entreprise locale, des standards exigeants</h2>
+        <p style="margin-top:18px; font-size:16px;">Basée à Douala, P&amp;S PRO-ELECT SARL intervient sur l'ensemble du territoire camerounais. Nos équipes appliquent les normes électriques en vigueur et travaillent en étroite coordination avec les exploitants du réseau national.</p>
+        <div class="values-grid" style="grid-template-columns:1fr 1fr; margin-top:36px;">
+          <div class="value-card">
+            <h4>Sécurité</h4>
+            <p>Procédures HSE strictes sur chaque intervention, en atelier comme sur le terrain.</p>
+          </div>
+          <div class="value-card">
+            <h4>Réactivité</h4>
+            <p>Équipes d'astreinte pour les interventions de maintenance urgentes.</p>
+          </div>
+          <div class="value-card">
+            <h4>Qualité</h4>
+            <p>Matériel certifié et contrôle systématique avant mise en service.</p>
+          </div>
+          <div class="value-card">
+            <h4>Proximité</h4>
+            <p>Une équipe locale qui connaît les réalités du terrain camerounais.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Zones d'intervention</p>
+        <h3 style="font-size:26px; color:var(--navy-deep); text-transform:uppercase; margin-top:14px;">Présents dans tout le pays</h3>
+        <p style="margin-top:14px;">Nos équipes se déplacent sur l'ensemble du territoire national pour vos projets de réseaux électriques et de génie civil associé.</p>
+        <div class="zone-list">
+          <span>Douala</span>
+          <span>Yaoundé</span>
+          <span>Bafoussam</span>
+          <span>Douala</span>
+          <span>Limbe</span>
+          <span>Kribi</span>
+          <span>Bertoua</span>
+        </div>
+        <div class="map-block">
+          <iframe title="Zone d'intervention P&S PRO-ELECT" src="https://www.google.com/maps?q=Douala,Cameroun&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Un projet de réseau électrique ?</h2>
+    <p>Parlons-en. Nos ingénieurs étudient votre besoin et vous proposent une solution adaptée sous 48h.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Demander un devis gratuit</a>
+      <a href="tel:+237600000000" class="btn btn-ghost">+237 6 00 00 00 00</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <img src="assets/logo.jpeg" alt="P&S PRO-ELECT SARL">
+        <p>Réseaux MT/BT — Conception, réalisation, maintenance, conseil et études de génie civil.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="apropos.html">À propos</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="services.html">Conception MT/BT</a></p>
+        <p><a href="services.html">Maintenance</a></p>
+        <p><a href="services.html">Études génie civil</a></p>
+        <p><a href="services.html">Conseil</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Zone Industrielle de Bonabéri<br>Douala, Cameroun</p>
+        <p>+237 6 00 00 00 00</p>
+        <p>contact@proselect.cm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> P&amp;S PRO-ELECT SARL. Tous droits réservés.</span>
+      <span>RCCM / NIU — Douala, Cameroun</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
