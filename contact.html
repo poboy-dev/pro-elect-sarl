@@ -7,6 +7,7 @@
 <meta name="description" content="Contactez P&S PRO-ELECT SARL à Douala pour vos projets de réseaux MT/BT, maintenance électrique ou études de génie civil.">
 <link rel="icon" href="assets/logo.jpeg">
 <link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -42,7 +43,7 @@
       <div class="contact-info-card">
         <div class="item">
           <h4>Adresse</h4>
-          <p>Zone Industrielle de Bonabéri<br>Douala, Cameroun</p>
+          <p>YASSA<br>Douala, Cameroun</p>
         </div>
         <div class="item">
           <h4>Téléphone</h4>
@@ -50,7 +51,7 @@
         </div>
         <div class="item">
           <h4>Email</h4>
-          <p>contact@proselect.cm<br>devis@proselect.cm</p>
+          <p>Proelectsarl17@gmail.com<br>devis@proselect.cm</p>
         </div>
         <div class="item">
           <h4>Horaires</h4>
@@ -66,7 +67,7 @@
         <p class="eyebrow">Formulaire de contact</p>
         <h3 style="font-size:26px; color:var(--navy-deep); text-transform:uppercase; margin-top:14px; margin-bottom:26px;">Décrivez votre projet</h3>
 
-        <form action="mailto:contact@proselect.cm" method="post" enctype="text/plain">
+        <form id="contactForm">
           <div class="form-row">
             <div class="field">
               <label for="nom">Nom complet</label>
@@ -101,15 +102,15 @@
             <textarea id="message" name="message" placeholder="Décrivez votre projet : localisation, échéance, type d'installation..."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-dark">Envoyer la demande</button>
-          <p class="form-note">Ce bouton ouvre votre messagerie par défaut. Vous pouvez aussi nous appeler directement.</p>
+          <button type="submit" class="btn btn-dark" id="submitBtn">Envoyer la demande</button>
+          <p class="form-note" id="formMessage" style="display:none;"></p>
         </form>
       </div>
 
     </div>
 
     <div class="map-block">
-      <iframe title="Localisation P&S PRO-ELECT SARL" src="https://www.google.com/maps?q=Bonaberi,Douala,Cameroun&output=embed" loading="lazy"></iframe>
+      <iframe title="Localisation P&S PRO-ELECT SARL" src="https://www.google.com/maps?q=yassa,Douala,Cameroun&output=embed" loading="lazy"></iframe>
     </div>
   </div>
 </section>
@@ -137,18 +138,18 @@
       </div>
       <div>
         <h4>Contact</h4>
-        <p>Zone Industrielle de Bonabéri<br>Douala, Cameroun</p>
+        <p>YASSA<br>Douala, Cameroun</p>
         <p>+237 6 00 00 00 00</p>
-        <p>contact@proselect.cm</p>
+        <p>proelectsarl17@gmail.com</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> P&amp;S PRO-ELECT SARL. Tous droits réservés.</span>
+      <span>© <span data-year>2023</span> P&amp;S PRO-ELECT SARL. Tous droits réservés.</span>
       <span>RCCM / NIU — Douala, Cameroun</span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
