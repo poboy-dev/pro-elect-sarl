@@ -358,6 +358,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: background .2s ease;
 }
 .service-card:hover{ background: var(--paper); }
+.service-card-link{
+  display:block;
+  color: inherit;
+}
+.service-card-link:hover{ text-decoration: none; }
 .service-num{
   font-family: var(--mono);
   font-size: 13px;
@@ -382,6 +387,29 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border: 1px solid var(--blue);
   border-radius: 20px;
   padding: 5px 12px;
+}
+
+.domain-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+.domain-card{
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+.domain-card h3{
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--navy-deep);
+}
+.domain-card p{
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--slate);
 }
 
 @media (max-width: 980px){
