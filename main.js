@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var submitBtn = document.getElementById('submitBtn');
       var formMessage = document.getElementById('formMessage');
       var btnText = submitBtn ? submitBtn.textContent : 'Envoyer la demande';
-      var formAction = contactForm.getAttribute('action') || 'https://formsubmit.co/ajax/ekoulepaulpatrice@gmail.com';
+      var formAction = contactForm.getAttribute('action') || 'https://formsubmit.co/ajax/proelectsarl988@gmail.com';
 
       if (submitBtn) {
         submitBtn.disabled = true;
